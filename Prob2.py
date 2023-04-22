@@ -1,62 +1,62 @@
 ## camel
 
-# def main():
-#     get_input = getinput()
-#     snake_case = convert_input(get_input)
-#     print("case snake: ", snake_case)
+def main():
+    get_input = getinput()
+    snake_case = convert_input(get_input)
+    print("case snake: ", snake_case)
 
 
-# def getinput():
-#     input1 = input("Camel case: ")
-#     return input1
+def getinput():
+    input1 = input("Camel case: ")
+    return input1
 
-# def convert_input(txt):
-#     for aso in txt:
-#         if aso.isupper():
-#             txt = txt.replace(aso, "_" + aso.lower())
-#     return txt
+def convert_input(txt):
+    for letter in txt:
+        if letter.isupper():
+            txt = txt.replace(letter, "_" + letter.lower())
+    return txt
 
 
-# main()
+main()
 
 ## coke
 
-# def main():
-#     coke()
+def main():
+    coke()
 
-# def coke():
-#     coins = [5, 10, 25]
-#     price = 50
-#     while price > 0:
-#         print("Amount due: ", price)
-#         coin = int(input("Insert coin: "))
-#         if coin in coins:
-#             price -= coin
-#         else:
-#             print("change owed: ", abs(price))
+def coke():
+    coins = [5, 10, 25]
+    price = 50
+    while price > 0:
+        print("Amount due: ", price)
+        coin = int(input("Insert coin: "))
+        if coin in coins:
+            price -= coin
+        else:
+            print("change owed: ", abs(price))
 
-# main()
+main()
 
 
 ## twitter
 
-# def main():
-#     tweet = input1()
-#     shortened_tweet = shortened(tweet)
-#     print(shortened_tweet)
+def main():
+    tweet = input1()
+    shortened_tweet = shortened(tweet)
+    print(shortened_tweet)
 
-# def input1():
-#     phrase = str(input("Tweet anything: "))
-#     return phrase
+def input1():
+    phrase = str(input("Tweet anything: "))
+    return phrase
 
-# def shortened(tweet):
-#     vowels = ["a", "e", "i", "o", "u"]
-#     for i in tweet:
-#         if i.lower() in vowels:
-#             tweet = tweet.replace(i, "")
-#     return tweet
+def shortened(tweet):
+    vowels = ["a", "e", "i", "o", "u"]
+    for i in tweet:
+        if i.lower() in vowels:
+            tweet = tweet.replace(i, "")
+    return tweet
         
-# main()
+main()
 
 
 ## Plates
@@ -87,17 +87,17 @@ main()
 
 # Nutritions 17
 
-# calories = {
-#     "Apple" : 130,
-#     "Avocado" : 50,
-#     "Sweet cherries" : 100,
-#     "Banana" : 140,
-#     "Strawberries" : 30,
-#     "Lemon" : 25,
-#     "Orange" : 15
-# }
+calories = {
+    "Apple" : 130,
+    "Avocado" : 50,
+    "Sweet cherries" : 100,
+    "Banana" : 140,
+    "Strawberries" : 30,
+    "Lemon" : 25,
+    "Orange" : 15
+}
 
-# print(f"Calories: ", calories[input("Items: ").title()])
+print(f"Calories: ", calories[input("Items: ").title()])
 
 
 
